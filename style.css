@@ -16,7 +16,12 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-image: url('actually real bimmage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-resolution: from-image;
+
 }
 
 .sidebar {
@@ -92,6 +97,7 @@ label #cancel {
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
     line-height: 45px;
     transition: all .5s ease;
+    \1F47B;
 }
 
 label #cancel {
