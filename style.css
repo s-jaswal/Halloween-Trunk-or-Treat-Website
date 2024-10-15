@@ -355,3 +355,108 @@ html:hover .spider {
 }
 
 /* end of animation for spider */
+
+/* trunk showcase start */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trunk-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.trunk {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.trunk-image {
+    width: 100%;
+    border: 5px solid #ff751a;
+    /* Halloween Orange */
+    transition: transform 0.3s ease;
+}
+
+.trunk-image:hover {
+    transform: scale(1.1);
+}
+
+.trunk-description {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #ff751a;
+    /* Halloween Orange */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+h3 {
+    color: #ff751a;
+    /* Halloween Orange */
+    text-shadow: 2px 2px 8px white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* trunk showcase end */
+
+/* schedule page css start */
+.schedule {
+    margin-top: 20px;
+}
+
+.event {
+    margin-bottom: 30px;
+}
+
+.event-title {
+    font-size: 1.8rem;
+    color: #ff751a;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.event-title:hover {
+    color: #ffa31a;
+    /* Lighter Halloween Orange */
+}
+
+.event-details {
+    display: none;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.event-details img {
+    max-width: 100%;
+    border: 3px solid #ff751a;
+    /* Halloween Orange */
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 1.2rem;
+    color: #ff751a;
+}
+
+/* schedule page end */
