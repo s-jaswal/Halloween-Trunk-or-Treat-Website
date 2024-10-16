@@ -13,7 +13,6 @@ $(document).ready(function () {
 
 // for the schedule (3rd page)
 $(document).ready(function () {
-    // When an event title is clicked, toggle the corresponding details
     $('.event-title').on('click', function () {
         $(this).next('.event-details').slideToggle(300);
     });

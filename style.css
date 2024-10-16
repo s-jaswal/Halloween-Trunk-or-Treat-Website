@@ -418,6 +418,16 @@ h3 {
 /* trunk showcase end */
 
 /* schedule page css start */
+h4 {
+    color: #ff751a;
+    /* Halloween Orange */
+    text-shadow: 2px 2px 8px white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
 .schedule {
     margin-top: 20px;
 }
@@ -456,7 +466,13 @@ h3 {
 
 .event-details p {
     font-size: 1.2rem;
-    color: #ff751a;
+    color: white;
 }
 
 /* schedule page end */
+
+li {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
