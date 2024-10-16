@@ -204,164 +204,24 @@ p {
     margin: 0;
 }
 
-/* css for spider animation on home page */
-html:hover .spider {
-    top: -120%;
-}
-
-.spider {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    left: 30%;
-
-    /* 4. Animatie */
-    animation: swing 2s infinite;
-    transform-origin: top;
-
-    /* Bonus */
-    transition: 1s ease-in-out;
-
-}
-
-.spider .spiderweb {
-    width: 2px;
-    height: 200px;
-    margin-left: 49px;
-    background: rgba(255, 255, 255, .7);
-}
-
-.spider .body {
-    width: 100px;
-    height: 80px;
-    background: white;
-    position: relative;
-    border-radius: 50%;
-}
-
-.spider .body .eye {
-    width: 33px;
-    height: 33px;
-    position: absolute;
-    bottom: 20px;
-    background: black;
-    border-radius: 50%;
-}
-
-.spider .body .eye.left {
-    left: 15px;
-}
-
-.spider .body .eye.right {
-    right: 15px;
-}
-
-.spider .body .eye:after {
-    background: white;
-    width: 7px;
-    height: 7px;
-    content: '';
-    display: block;
-    margin: 55%;
-    border-radius: 50%;
-
-    /* 3. Animatie */
-    animation: look 8s infinite;
-}
-
-.spider .legs .leg {
-    width: 80px;
-    height: 40px;
-    margin-top: -20px;
-    border: 5px solid transparent;
-    border-top-color: white;
-    border-radius: 40px 40px 0 0;
-}
-
-.spider .legs {
-    position: absolute;
-    bottom: -10%;
-    z-index: -1;
-}
-
-.spider .legs.left {
-    left: -70%;
-}
-
-.spider .legs.right {
-    right: -60%;
-}
-
-
-.legs.left .leg:nth-child(1) {
-    transform: rotate(10deg);
-    margin-left: 10px;
-}
-
-.legs.right .leg:nth-child(1) {
-    transform: rotate(-10deg);
-    margin-left: -10px;
-}
-
-
-.legs.left .leg:nth-child(2) {
-    transform: rotate(-20deg);
-    margin-left: 20px;
-}
-
-.legs.right .leg:nth-child(2) {
-    transform: rotate(20deg);
-    margin-left: -20px;
-}
-
-
-.legs.left .leg:nth-child(3) {
-    transform: rotate(-50deg);
-    margin-left: 30px;
-}
-
-.legs.right .leg:nth-child(3) {
-    transform: rotate(50deg);
-    margin-left: -30px;
-}
-
-/* 1. Animatie */
-@keyframes look {
-
-    0%,
-    40%,
-    100% {
-        transform: translateX(0);
-    }
-
-    45%,
-    95% {
-        transform: translateX(-110%);
-    }
-}
-
-
-/* 3. Animatie */
-@keyframes swing {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-/* end of animation for spider */
 
 /* trunk showcase start */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+
 }
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto 20px;
+    /* Adds 100px space at the top and 20px at the bottom */
+}
+
 
 .trunk-gallery {
     display: flex;
@@ -473,4 +333,193 @@ li {
     font-size: 1.2rem;
     color: white;
     text-align: center;
+}
+
+/* pumpkin animation begin */
+.pumpkin {
+    height: 11em;
+    width: 15em;
+    background: #f68632;
+    border: 0.4em solid red;
+    border-radius: 70%/110%;
+    position: relative;
+    box-shadow: inset 0 0px 20px #a14907, 0 0 30px -4px red;
+    z-index: 1;
+    animation: float 3s infinite;
+}
+
+.pumpkin .texture {
+    height: 10.8em;
+    width: 6.5em;
+    position: absolute;
+    bottom: -0.4em;
+    left: 4em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid red;
+    border-top: 0.5em solid red;
+}
+
+.pumpkin .texture:after {
+    content: "";
+    display: block;
+    height: 10.7em;
+    width: 12em;
+    position: absolute;
+    bottom: -0.4em;
+    left: -2.5em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid red;
+    border-top: 0.5em solid red;
+}
+
+.pumpkin .root {
+    background: #517f54;
+    height: 2.8em;
+    width: 1.25em;
+    position: absolute;
+    left: calc(7.5em - 0.625em);
+    top: -2.7em;
+    transform: rotate(5deg);
+    border-radius: 30% 20% 70% 10%;
+    z-index: -1;
+    box-shadow: inset 0 0px 10px #29412b;
+}
+
+.pumpkin .eye {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+}
+
+.pumpkin .eye.right {
+    right: 3.7em;
+    transform: rotate(30deg);
+    border-bottom: 2.1em solid transparent;
+    border-left: 2.4em solid #401d03;
+}
+
+.pumpkin .eye.left {
+    left: 3.7em;
+    transform: rotate(-30deg);
+    border-bottom: 2.1em solid transparent;
+    border-right: 2.4em solid #401d03;
+}
+
+.pumpkin .mouth {
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+}
+
+.pumpkin .mouth.right {
+    right: 3.6em;
+    border-radius: 0 0 100% 0;
+}
+
+.pumpkin .mouth.left {
+    left: 3.6em;
+    border-radius: 0 0 0 100%;
+}
+
+.pumpkin .teeth {
+    width: 0.5em;
+    height: 1em;
+    position: absolute;
+    top: 7.7em;
+    left: 7.25em;
+    border-top: 0.8em solid transparent;
+    border-bottom: 0em solid transparent;
+    border-left: 0.8em solid #401d03;
+}
+
+.pumpkin .teeth:before,
+.pumpkin .teeth:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+}
+
+.pumpkin .teeth:before {
+    right: 2.2em;
+    top: -0.65em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+}
+
+.pumpkin .teeth:after {
+    left: 1em;
+    top: -0.85em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+}
+
+.shadow {
+    margin: 10% auto 0;
+    background: #000;
+    width: 230px;
+    height: 50px;
+    border-radius: 50%;
+    animation: zoom 3s infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+/* pumpkin animation end */
+
+.event-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: orangered;
+    /* Add spacing above the description */
+}
+
+#more-info {
+    background-color: orangered;
+}
+
+* {
+    font-family: "professor-minty", sans-serif;
+}
+
+
+
+.nav-container {
+    width: 100%;
+    height: 75px;
+    top: 0px;
+
+
 }
