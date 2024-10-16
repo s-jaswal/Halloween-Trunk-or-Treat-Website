@@ -3,79 +3,83 @@
 
 <head>
     <title>Trunk Showcase</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- side navbar start code - codepen credit: https://codepen.io/yuhomyan/pen/xxVOPQL-->
+    <!-- side navbar start -->
     <input type="checkbox" id="check">
     <label for="check">
         <i class="fas fa-bars" id="btn"></i>
         <i class="fas fa-times" id="cancel"></i>
     </label>
     <div class="sidebar">
-        <header>𝕄𝔼ℕ𝕌</header>
+        <a href="index.html" class="active">
+            <header><span>𝕄𝔼ℕ𝕌 &#127875;</span></header>
+        </a>
+
         <a href="trunkshowcase.html" class="active">
             <i class="fas fa-qrcode"></i>
             <span>𝕋ℝ𝕌ℕ𝕂 𝕊ℍ𝕆𝕎ℂ𝔸𝕊𝔼</span>
         </a>
-        <a href="schedule.html">
+        <a href="schedule.html" class="active">
             <i class="fas fa-link"></i>
             <span>𝕋ℍ𝔼 𝕊ℂℍ𝔼𝔻𝕌𝕃𝔼</span>
         </a>
     </div>
     <!--side navbar end-->
+
     <!--images for trunk showcase start-->
     <div class="container">
-        <h3> Spooky Halloween Trunk Showcase </h3>
+        <h3>Spooky Halloween Trunk Showcase</h3>
 
         <div class="trunk-gallery">
             <div class="trunk">
-                <img src="trunk1.jpg" alt="Spooky Trunk 1" class="trunk-image">
-                <div class="trunk-description">Spooky Haunted House Trunk</div>
+                <img src="show1.png" alt="Spooky Trunk 1" class="trunk-image">
+                <div class="trunk-description">Green Ladies</div>
             </div>
             <div class="trunk">
-                <img src="trunk2.jpg" alt="Creepy Trunk 2" class="trunk-image">
-                <div class="trunk-description">Ghostly Graveyard Trunk</div>
+                <img src="show2.png" alt="Creepy Trunk 2" class="trunk-image">
+                <div class="trunk-description">Children in a Trunk or Treat</div>
             </div>
             <div class="trunk">
-                <img src="trunk3.jpg" alt="Witch Trunk 3" class="trunk-image">
-                <div class="trunk-description">Witches and Potions Trunk</div>
+                <img src="show3.png" alt="Witch Trunk 3" class="trunk-image">
+                <div class="trunk-description">Dino Trunk or Treat</div>
             </div>
             <div class="trunk">
-                <img src="trunk4.jpg" alt="Spooky Trunk 4" class="trunk-image">
-                <div class="trunk-description">Spooky Haunted House Trunk</div>
+                <img src="show4.png" alt="Spooky Trunk 1" class="trunk-image">
+                <div class="trunk-description">Woman with orange hair staring at little boy</div>
             </div>
             <div class="trunk">
-                <img src="trunk5.jpg" alt="Creepy Trunk 5" class="trunk-image">
-                <div class="trunk-description">Ghostly Graveyard Trunk</div>
+                <img src="show5.png" alt="Creepy Trunk 2" class="trunk-image">
+                <div class="trunk-description">Barbie Themed Trunk</div>
             </div>
             <div class="trunk">
-                <img src="trunk6.jpg" alt="Witch Trunk 6" class="trunk-image">
-                <div class="trunk-description">Witches and Potions Trunk</div>
+                <img src="show6.png" alt="Witch Trunk 3" class="trunk-image">
+                <div class="trunk-description">Hogwarts Themed Trunk</div>
             </div>
             <!-- Add more trunk items as needed -->
         </div>
     </div>
     <!--images for trunk showcase end-->
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
+    <!-- Custom JS -->
     <script src="script.js"></script>
 
 </body>

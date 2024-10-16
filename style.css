@@ -366,8 +366,6 @@ html:hover .spider {
 .trunk-gallery {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 200px;
     text-align: center;
 }
 
@@ -399,7 +397,7 @@ html:hover .spider {
     width: 80%;
     border-radius: 5px;
     font-size: 1.2rem;
-    color: #ff751a;
+    color: white;
     /* Halloween Orange */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     transition: all 0.3s ease;
